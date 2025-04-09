@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-
+import RecentTransactions from "./components/RecentTransactions"
 const features = [
  {
   title: "Get FORGE",
@@ -37,7 +37,7 @@ const features = [
 
 const HomePage = () => {
  return (
-  <div className="max-w-6xl mx-auto p-6">
+  <div className="max-w-6xl mx-auto p-6 ">
    {/* Header */}
    <motion.div
     initial={{ opacity: 0, y: -20 }}
@@ -88,6 +88,7 @@ const HomePage = () => {
      </motion.div>
     ))}
    </motion.div>
+   <RecentTransactions/>
   </div>
  )
 }
